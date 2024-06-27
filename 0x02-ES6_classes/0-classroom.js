@@ -1,9 +1,13 @@
-import ClassRoom from './0-classroom';
-
 /**
- * Creates an array of {@link ClassRoom}s with a specific size.
- * @returns An array of {@link ClassRoom}s.
+ * Represents a class room.
  */
-export default function initializeRooms() {
-  return [19, 20, 34].map((size) => new ClassRoom(size));
+export default class ClassRoom {
+  /**
+   * Creates a new @see {@link ClassRoom}.
+   * @param {Number} maxStudentsSize - The maximum number of
+   * students in the class.
+   */
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
+  }
 }
